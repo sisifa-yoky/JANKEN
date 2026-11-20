@@ -14,7 +14,7 @@ JANKEN CLUBは、コンピューターと対戦できるレトロなアーケー
 
 ## ③ アプリのデプロイURL
 
-（ここにURL）
+https://sisifa-yoky.github.io/JANKEN/
 
 ## ④ アプリのログイン用IDまたはPassword（ある場合）
 
