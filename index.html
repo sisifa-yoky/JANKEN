@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JANKEN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <section id="hero">
+            <div class="pixel-decoration">★　★　★</div>
+        </section>
+
+        <section id="game">
+
+            <div class="game-header">
+                <p>CHOOSE YOUR HAND</p>
+                <span id="round-count">◆ ROUND 001 ◆</span>
+            </div>
+
+            <div class="scoreboard">
+                <div class="player-score">
+                    <p>PLAYER 01</p>
+                    <h2 id="player-score">000</h2>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="computer-score">
+                    <p>CPU</p>
+                    <h2 id="computer-score">000</h2>
+                </div>
+            </div>
+
+            <div class="streak-box">
+                <p>STREAK</p>
+                <span id="streak">000</span>
+            </div>
+
+            <div id="battle-area" class="battle-area">
+                <div class="fighter">
+                    <div id="player-hand" class="hand-display">?</div>
+                    <p>YOU</p>
+                </div>
+
+                <div class="battle-vs">VS</div>
+
+                <div class="fighter">
+                    <div id="pc_hands" class="hand-display">?</div>
+                    <p>COMPUTER</p>
+                </div>
+            </div>
+
+            <div class="game-message" aria-live="polite">
+                <p id="judgment">READY?</p>
+                <span id="cpu-message">Choose your hand, player!</span>
+            </div>
+
+            <div class="hand-buttons">
+                <button class="hand-button rock" data-hand="ROCK" type="button">
+                    <img src="img/rock copy.png" alt="Rock" class="hand-image">
+                    <span>ROCK</span>
+                    <kbd>R</kbd>
+                </button>
+
+                <button class="hand-button scissors" data-hand="SCISSORS" type="button">
+                    <img src="img/scissors copy.png" alt="Scissors" class="hand-image">
+                    <span>SCISSORS</span>
+                    <kbd>S</kbd>
+                </button>
+
+                <button class="hand-button paper" data-hand="PAPER" type="button">
+                    <img src="img/paper copy.png" alt="Paper" class="hand-image">
+                    <span>PAPER</span>
+                    <kbd>P</kbd>
+                </button>
+            </div>
+
+            <button id="reset-btn" class="reset-button" type="button">
+                PLAY AGAIN
+            </button>
+
+        </section>
+
+        <section id="score">
+            <p class="eyebrow">★ YOUR GAME RECORD ★</p>
+            <h2>HIGH SCORES</h2>
+
+            <div class="record-container">
+                <div class="record-card">
+                    <p>WINS</p>
+                    <h3 id="wins">000</h3>
+                </div>
+
+                <div class="record-card">
+                    <p>LOSSES</p>
+                    <h3 id="losses">000</h3>
+                </div>
+
+                <div class="record-card">
+                    <p>DRAWS</p>
+                    <h3 id="draws">000</h3>
+                </div>
+
+                <div class="record-card">
+                    <p>BEST STREAK</p>
+                    <h3 id="best-streak">000</h3>
+                </div>
+            </div>
+
+            <button id="clear-btn" class="clear-button" type="button">
+                CLEAR RECORDS
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>
